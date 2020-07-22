@@ -10,7 +10,7 @@
         $("imessage").html(output);
     }
 
-    $("#button-getmessage").submit(function(event){
+    $("#button-getmessage").click(function(event){
         event.preventDefault();
 
         var comfortable = $("checkbox-comfortable").prop("checked");
