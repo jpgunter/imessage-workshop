@@ -11,6 +11,8 @@
     }
 
     $("#imessage-form").submit(function(event){
+        event.preventDefault();
+
         var comfortable = $("checkbox-comfortable").prop("checked");
         var uncomfortable = $("checkbox-uncomfortable").prop("checked");
 
