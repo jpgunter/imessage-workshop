@@ -20,10 +20,10 @@
 
             if(comfortable && uncomfortable){
                 updateMessage(COMBINED_EMOTION_LIST);
-            } else if(COMFORTABLE_EMOTION_LIST){
-                updateMessage(comfortable);
-            } else if(UNCOMFORTABLE_EMOTION_LIST){
-                updateMessage(uncomfortable);
+            } else if(comfortable){
+                updateMessage(COMFORTABLE_EMOTION_LIST);
+            } else if(uncomfortable){
+                updateMessage(UNCOMFORTABLE_EMOTION_LIST);
             } else {
                 updateMessage(COMBINED_EMOTION_LIST);
             }
