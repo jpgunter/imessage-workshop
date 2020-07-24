@@ -15,27 +15,22 @@
       <div class="container">
         <form id="imessage-form">
           <div class="row">
-            <div class="col-1">
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-success active">
-                  <input type="checkbox" name="checkbox-comfortable" id="checkbox-comfortable" checked> Comfortable
-                </label>
-              </div>
-            </div>
-            <div class="col-1">
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-danger active">
-                  <input type="checkbox" name="checkbox-uncomfortable" id="checkbox-uncomfortable" checked> Uncomfortable
-                </label>
-              </div>
-            </div>
+            Which emotions would you like to work on?
+          </div>
+          <div class="row">
+            <button type="button" id="btn-comfortable" class="btn btn-outline-success active" data-toggle="button" aria-pressed="false">
+              Comfortable
+            </button>
+            <button type="button" id="btn-uncomfortable" class="btn btn-outline-danger active" data-toggle="button" aria-pressed="false">
+              Unomfortable
+            </button>
           </div>
           <div class="row">
               <input type="submit" value="Get Message" class="btn btn-lg btn-primary" name="getmessage" id="button-getmessage" ></input>
           </div>
         </form>
         <div class="row">
-          <div id="imessage" class="alert alert-primary" role="alert">
+          <div id="imessage" class="alert alert-primary invisible" role="alert">
           </div>
         </div>
       </div>

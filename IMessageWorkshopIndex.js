@@ -7,7 +7,7 @@
         var emotion = emotionList[Math.floor(Math.random() * emotionList.length)];
 
         var output = "I feel " + emotion + " when _________________ because ___________________";
-        $("#imessage").html(output);
+        $("#imessage").html(output).removeClass("invisible");
     };
 
     var bindHandlers = function(){
@@ -15,8 +15,8 @@
             event.preventDefault(); 
             console.log(event);
 
-            var comfortable = $("checkbox-comfortable").prop("checked");
-            var uncomfortable = $("checkbox-uncomfortable").prop("checked");
+            var comfortable = $("btn-comfortable").hasClass("active");
+            var uncomfortable = $("btn-uncomfortable").hasClass("active");
 
             if(comfortable && uncomfortable){
                 updateMessage(both);
