@@ -15,8 +15,8 @@
             event.preventDefault(); 
             console.log(event);
 
-            var comfortable = $("btn-comfortable").hasClass("active");
-            var uncomfortable = $("btn-uncomfortable").hasClass("active");
+            var comfortable = $("#btn-comfortable").hasClass("active");
+            var uncomfortable = $("#btn-uncomfortable").hasClass("active");
 
             if(comfortable && uncomfortable){
                 updateMessage(both);
