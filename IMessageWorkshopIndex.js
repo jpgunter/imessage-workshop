@@ -7,7 +7,7 @@
         var emotion = emotionList[Math.floor(Math.random() * emotionList.length)];
 
         var output = "I feel " + emotion + " when _________________ because ___________________";
-        $("imessage").html(output);
+        $("#imessage").html(output);
     };
 
     var bindHandlers = function(){
