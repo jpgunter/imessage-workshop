@@ -8,23 +8,27 @@
 
         var output = "I feel " + emotion + " when _________________ because ___________________";
         $("imessage").html(output);
-    }
+    };
 
-    $("#imessage-form").submit(function(event){ 
-        event.preventDefault(); 
-        console.log(event);
+    var bindHandlers = function(){
+        $("#imessage-form").submit(function(event){ 
+            event.preventDefault(); 
+            console.log(event);
 
-        var comfortable = $("checkbox-comfortable").prop("checked");
-        var uncomfortable = $("checkbox-uncomfortable").prop("checked");
+            var comfortable = $("checkbox-comfortable").prop("checked");
+            var uncomfortable = $("checkbox-uncomfortable").prop("checked");
 
-        if(comfortable && uncomfortable){
-            updateMessage(both);
-        } else if(comfortable){
-            updateMessage(comfortable);
-        } else if(uncomfortable){
-            updateMessage(uncomfortable);
-        } else {
-            updateMessage(both);
-        }
-    });
+            if(comfortable && uncomfortable){
+                updateMessage(both);
+            } else if(comfortable){
+                updateMessage(comfortable);
+            } else if(uncomfortable){
+                updateMessage(uncomfortable);
+            } else {
+                updateMessage(both);
+            }
+        });
+    };
+
+    $(bindHandlers);
 }());
